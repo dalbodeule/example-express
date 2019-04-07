@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Hello
+    body
+        h1 LOGIN
+        br
+        form(action="/auth/login", method="post")
+            div
+                span ID: 
+                input(type="text", name="id")
+            div
+                span PW:
+                input(type="password", name="pw")
+            div
+                input(type="submit", value="Login!")
+        br
+        a(href="/") back

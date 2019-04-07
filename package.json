@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node --experimental-modules main.mjs"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
     "express": "^4.16.4",
     "express-async-errors": "^3.1.1",
     "express-session": "^1.15.6",
+    "log4js": "^4.1.0",
+    "on-finished": "^2.3.0",
     "pug": "^2.0.3"
   }
 }

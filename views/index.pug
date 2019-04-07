@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="ko")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -7,3 +7,12 @@ html(lang="en")
         title Hello
     body
         h1 Hello~
+        br
+        if !session.isLogin
+            a(href="/auth/login") Login!
+        else
+            span
+                | login user: 
+                b= session.userId
+            br
+            a(href="/auth/logout") Logout
